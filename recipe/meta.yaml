@@ -1,4 +1,4 @@
-{% set version = "0.5-4.3" %}
+{% set version = "0.5-4.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PCICt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PCICt/PCICt_{{ version }}.tar.gz
-  sha256: 0ee76a32d0da0319aae886975f28405f5232b38ca008af0fa8cbd570a19730f6
+  sha256: a797d90f7ac085674083dc5fefeff03823371b1228e0f0daa79fd3593bdd6eaa
 
 build:
   merge_build_host: true  # [win]
